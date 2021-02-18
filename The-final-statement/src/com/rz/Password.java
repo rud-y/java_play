@@ -1,12 +1,13 @@
-package com.timbuchalka;
+package com.rz;
 
 /**
  * Created by dev on 20/11/2015.
  */
 public class Password {
-    private static final int key = 748576362;
+    private final int key = 40102;
     private final int encryptedPassword;
 
+    // password encrypted when Password instance is created
     public Password(int password) {
         this.encryptedPassword = encryptDecrypt(password);
     }

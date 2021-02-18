@@ -1,4 +1,4 @@
-package com.timbuchalka;
+package com.rz;
 
 public class Main {
 
