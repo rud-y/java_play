@@ -15,7 +15,7 @@ public class Main {
         System.out.println(Math.PI);
 //        Math m = new Math();
 
-        int pw = 674312;
+        int pw = 10109;
         Password password = new Password(pw);
         password.storePassword();
 

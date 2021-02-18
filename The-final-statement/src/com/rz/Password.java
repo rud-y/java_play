@@ -4,7 +4,7 @@ package com.rz;
  * Created by dev on 20/11/2015.
  */
 public class Password {
-    private final int key = 40102;
+    private final int key = 4235009;
     private final int encryptedPassword;
 
     // password encrypted when Password instance is created
