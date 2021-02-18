@@ -6,9 +6,9 @@ import java.util.ArrayList;
 
 public class Account {
 
-    public String accountName;
-    public double balance = 0;
-    public ArrayList<Double> transactions = new ArrayList<>();
+    private String accountName;
+    private double balance = 0;
+    private ArrayList<Double> transactions = new ArrayList<>();
 
     public Account(String accountName) {
         this.accountName = accountName;
@@ -30,10 +30,10 @@ public class Account {
         if (withdrawal < 0) {
             this.balance += withdrawal;
             this.transactions.add(withdrawal);
-            System.out.println("the amount of " + amount + " has been withdrawn!\n" +
+            System.out.println("The amount of " + amount + " has been withdrawn!\n" +
                     "Balance is: " + decimalFormat2.format(this.getBalance()));
         } else {
-            System.out.println("Negative sum cannot be withdrawn. Please enter an amount more than zero");
+            System.out.println("Negative sum cannot be withdrawn.");
         }
     }
 
@@ -41,7 +41,9 @@ public class Account {
         if(amount > 0) {
             this.balance += amount;
             this.transactions.add(amount);
-            System.out.println("the amount deposited: " + amount + " | Balance: " + decimalFormat2.format(this.getBalance()));
+            System.out.println("The amount deposited: " + amount + " | Balance: " + decimalFormat2.format(this.getBalance()));
+        } else {
+            System.out.println("Cannot deposit a negative sum!");
         }
     }
 
