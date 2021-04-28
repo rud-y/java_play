@@ -1,3 +1,5 @@
+package com.rz;
+
 public class Dimensions {
 
   private int width;

@@ -1,3 +1,5 @@
+package com.rz;
+
 public class Resolution {
   private int width;
   private int height;

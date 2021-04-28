@@ -1,3 +1,5 @@
+package com.rz;
+
 public class Case {
 
   private String model;
@@ -13,7 +15,7 @@ public class Case {
   }
 
   public void pressPowerButton() {
-    System.out.println("Power button pressed !");
+    System.out.println("Power button pressed!");
   }
 
   public String getModel() {

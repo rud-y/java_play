@@ -1,3 +1,5 @@
+package com.rz;
+
 public class Motherboard {
 
   private String model;
@@ -16,6 +18,7 @@ public class Motherboard {
   }
 
   public void loadProgram(String programName) {
+
     System.out.println("Program " + programName + " is now loading!");
   }
 
