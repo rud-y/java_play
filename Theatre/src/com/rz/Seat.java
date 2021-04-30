@@ -1,6 +1,7 @@
 package com.rz;
 
 //Having overridden compareTo(Seat seat) method
+//Needs to implement Comparable
 public class Seat implements Comparable<Seat> {
 
   private final String seatNumber;
