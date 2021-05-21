@@ -1,15 +1,15 @@
 package com.rz;
-
 //Having overridden compareTo(Seat seat) method
 //Needs to implement Comparable
 public class Seat implements Comparable<Seat> {
 
-  private final String seatNumber;
+  private  String seatNumber;
   private boolean reserved = false;
+  private double price;
 
-
-  public Seat(String seatNumber) {
+  public Seat(String seatNumber, double price) {
     this.seatNumber = seatNumber;
+    this.price = price;
   }
 
   @Override
@@ -17,8 +17,8 @@ public class Seat implements Comparable<Seat> {
     return this.seatNumber.compareToIgnoreCase(seat.getSeatNumber());
   }
 
-  public  boolean reserve() {
-    if(!this.reserved){
+  public boolean reserve() {
+    if (!this.reserved) {
       this.reserved = true;
       System.out.println("Seat " + seatNumber + " is reserved.");
       return true;
@@ -28,9 +28,9 @@ public class Seat implements Comparable<Seat> {
   }
 
   public boolean cancel() {
-    if(this.reserved){
+    if (this.reserved) {
       this.reserved = false;
-      System.out.println("Reservation of seat " + seatNumber + " was cancelled " );
+      System.out.println("Reservation of seat " + seatNumber + " was cancelled ");
       return true;
     } else {
       return false;
@@ -39,5 +39,9 @@ public class Seat implements Comparable<Seat> {
 
   public String getSeatNumber() {
     return seatNumber;
+  }
+
+  public double getPrice() {
+    return price;
   }
 }
