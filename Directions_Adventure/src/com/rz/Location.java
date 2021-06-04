@@ -28,6 +28,7 @@ public class Location {
     return description;
   }
 
+  // returning a new HashMap from exits
   public Map<String, Integer> getExits() {
     return new HashMap<String, Integer>(exits);
   }
