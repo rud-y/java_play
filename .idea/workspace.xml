@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f2c1a9f-f972-43af-864e-5a1193d6c36c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Theatre/out/production/Theatre/com/rz/Theatre$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theatre/out/production/Theatre/com/rz/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Theatre/out/production/Theatre/com/rz/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theatre/out/production/Theatre/com/rz/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/Theatre/out/production/Theatre/com/rz/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theatre/out/production/Theatre/com/rz/Theatre.class" beforeDir="false" afterPath="$PROJECT_DIR$/Theatre/out/production/Theatre/com/rz/Theatre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theatre/src/com/rz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Theatre/src/com/rz/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theatre/src/com/rz/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Theatre/src/com/rz/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Theatre/src/com/rz/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/Theatre/src/com/rz/Theatre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/collections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PackageChallenge" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
