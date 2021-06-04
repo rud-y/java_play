@@ -26,6 +26,15 @@ public class Mapping {
     List<String> sortedList = new ArrayList<String>(list);
     Collections.sort(sortedList);
     System.out.println("Sorted alphabetically: " +sortedList);
+
+    if(nhlTeams.remove("Philadelphia", "PHI")){
+      System.out.println("Philadelphia is removed---");
+    }else{
+      System.out.println("Philadelphia can't be removed --- key/value pair NOT found!");
+    }
+
+    System.out.println(nhlTeams.replace("Florida Panthers", "FLA", "FLO"));
+    System.out.println(nhlTeams.get("Florida Panthers"));
   }
 
 }
