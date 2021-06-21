@@ -2,7 +2,7 @@ package com.rz;
 
 import java.util.*;
 
-public class Main {
+public abstract class Main implements Comparable {
   public static void main(String[] args) {
 
     Theatre theatre = new Theatre("Odeon", 10, 16);
@@ -28,7 +28,7 @@ public class Main {
     priceSeats.add(new Seat("A00", 19.00));
     priceSeats.add(new Seat("B00", 1.00));
     Collections.sort(priceSeats, Theatre.PRICE_ORDER);
-    printList(priceSeats);
+//    printList(priceSeats);
 
 
 // MAX AND MIN SEAT NUMBER( ROW AND SEATNUMBER)
@@ -45,6 +45,29 @@ public class Main {
 //    sortList(seatCopy);
 //    System.out.println("Printing sorted seatCopy: ");
 //    printList(seatCopy);
+
+    String s = new String("Popocatepetl");
+    String allCharacters = "";
+    List<String> duplicates = new ArrayList<>();
+
+    for (int i = 0; i < s.length(); i++) {
+
+      String currentString = Character.toString(s.charAt(i));
+
+      if (allCharacters.contains(currentString)) {
+        duplicates.add(currentString);
+      } else {
+        allCharacters += currentString;
+      }
+    }
+
+    System.out.println("Duplicates in string / "+ s + " / are " + duplicates);
+
+
+  }
+
+  public int compareTo(char ch) {
+    return 0;
   }
 
   // PRINT LIST OF ALL SEATS WITH PRICE

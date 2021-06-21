@@ -1,9 +1,10 @@
 package com.rz;
+
 //Having overridden compareTo(Seat seat) method
 //Needs to implement Comparable
 public class Seat implements Comparable<Seat> {
 
-  private  String seatNumber;
+  private String seatNumber;
   private boolean reserved = false;
   private double price;
 

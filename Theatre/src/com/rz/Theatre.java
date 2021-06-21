@@ -97,11 +97,8 @@ public class Theatre {
   }
 
 
-  /////testing purposes
+  /////for testing purposes
   public Collection<Seat> getSeats() {
-//    for (Seat seat : seats) {
-//      System.out.println(seat.getSeatNumber());
-//    }
     return seats;
   }
 

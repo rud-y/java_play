@@ -7,12 +7,14 @@ public class Location {
 
   private final int locationID;
   private final String description;
+  //possible exits from current location
   private final Map<String, Integer> exits;
 
   public Location(int locationID, String description) {
     this.locationID = locationID;
     this.description = description;
     this.exits = new HashMap<String, Integer>();
+    this.exits.put("Q", 0);
   }
 
 
@@ -28,7 +30,7 @@ public class Location {
     return description;
   }
 
-  // returning a new HashMap from exits
+  // returning a new HashMap from exits Map ==> this.exits mapping field won't be affected !!
   public Map<String, Integer> getExits() {
     return new HashMap<String, Integer>(exits);
   }
