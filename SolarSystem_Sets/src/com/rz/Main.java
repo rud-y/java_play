@@ -30,6 +30,7 @@ public class Main {
     solarSystem.put(tempMoon.getName(), tempMoon);
     //Moon to Earth
     temp.addMoon(tempMoon);
+    planets.add(temp);
 
     //////////// Jupiter and moons
     temp = new HeavenObject("Jupiter", 4390);
@@ -69,31 +70,37 @@ public class Main {
 
     System.out.println("All Planets (almost):");
     for (String object : solarSystem.keySet()) {
-      System.out.println(object + ", ");
+      System.out.print(object + ", ");
     }
 //Jupiters moons
     HeavenObject jupiters = solarSystem.get("Jupiter");
+    System.out.println();
     System.out.println("Moons of " + jupiters.getName() + " are ->");
     for (HeavenObject aMoon : jupiters.getSatellites()) {
       System.out.println("\t" + aMoon.getName());
     }
 
-    // Getting all the moons of solarSystem
+    // Getting all the moons of solarSystem in Set
     Set<HeavenObject> moons = new HashSet<>();
     for (HeavenObject planet : planets) {
       moons.addAll(planet.getSatellites());
     }
     System.out.println("All Mooons: ");
     for (HeavenObject moon : moons) {
-      System.out.println(moon.getName());
+      System.out.println("\t" + moon.getName());
     }
 
-//   for(String eachObject : solarSystem.keySet()){
-//     if(eachObject.equals("Uranus")){
-//       System.out.println(solarSystem.get(eachObject).getOrbitalPeriod());
-//       break;
-//     }
-//   }
+    ///////////////////////
+    HeavenObject pluto = new HeavenObject("Pluto", 10990);
+    planets.add(pluto);
+
+    for (HeavenObject planet : planets) {
+      System.out.println(planet.getName() + " ||| " + planet.getOrbitalPeriod());
+    }
+
+    Object o = new Object();
+    o.equals(o);
+    "pluto".equals("");
 
 
   }

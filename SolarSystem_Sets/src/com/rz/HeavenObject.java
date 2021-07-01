@@ -30,4 +30,28 @@ public final class HeavenObject {
   public Set<HeavenObject> getSatellites(){
     return new HashSet<>(this.satellites);
   }
+
+
+  @Override // to override the method needs to have the same signature as equals /not as before: 'HeavenlyObject' type
+  public boolean equals(Object obj){
+    if(this == obj){
+      return true;
+    }
+    System.out.println("obj.getClass()" + obj.getClass());
+    System.out.println("this.getClass()" + this.getClass());
+
+    if((obj == null) || (obj.getClass() != this.getClass())){
+      return false;
+    }
+
+    String objName = ((HeavenObject) obj).getName();
+    return this.name.equals(objName);
+  }
+
+
+  @Override
+  public int hashCode() {
+    System.out.println("Hashcode called");
+    return this.name.hashCode() + 57;
+  }
 }
