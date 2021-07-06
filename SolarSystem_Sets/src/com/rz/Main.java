@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.Set;
 
 public class Main {
-  private static Map<String, HeavenObject> solarSystem = new HashMap<>();
-  private static Set<HeavenObject> planets = new HashSet<>();
+  private static final Map<String, HeavenObject> solarSystem = new HashMap<>();
+  private static final Set<HeavenObject> planets = new HashSet<>();
 
 
   public static void main(String[] args) {
@@ -51,6 +51,7 @@ public class Main {
     //////////////////
 
 
+
     temp = new HeavenObject("Uranus", 6070);
     solarSystem.put(temp.getName(), temp);
     planets.add(temp);
@@ -59,7 +60,8 @@ public class Main {
     solarSystem.put(temp.getName(), temp);
     planets.add(temp);
 
-    temp = new HeavenObject("Pluto", 10990);
+    // Pluto 2 !
+    temp = new HeavenObject("Pluto", 10000);
     solarSystem.put(temp.getName(), temp);
     planets.add(temp);
 
@@ -72,7 +74,8 @@ public class Main {
     for (String object : solarSystem.keySet()) {
       System.out.print(object + ", ");
     }
-//Jupiters moons
+
+    //Jupiter's moons
     HeavenObject jupiters = solarSystem.get("Jupiter");
     System.out.println();
     System.out.println("Moons of " + jupiters.getName() + " are ->");
@@ -91,9 +94,12 @@ public class Main {
     }
 
     ///////////////////////
-    HeavenObject pluto = new HeavenObject("Pluto", 10990);
+    // Pluto 2!
+    HeavenObject pluto = new HeavenObject("Pluto", 11100);
+    solarSystem.put(pluto.getName(), pluto);
     planets.add(pluto);
 
+    // Check if planets (HashSet) does not contain duplicates (pluto recorded twice)
     for (HeavenObject planet : planets) {
       System.out.println(planet.getName() + " ||| " + planet.getOrbitalPeriod());
     }
@@ -101,6 +107,7 @@ public class Main {
     Object o = new Object();
     o.equals(o);
     "pluto".equals("");
+
 
 
   }

@@ -49,9 +49,9 @@ public final class HeavenObject {
   }
 
 
-  @Override
+  @Override //
   public int hashCode() {
     System.out.println("Hashcode called");
-    return this.name.hashCode() + 57;
+    return this.name.hashCode();
   }
 }
